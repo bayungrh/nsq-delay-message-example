@@ -1,7 +1,7 @@
 const nsq = require('nsqjs');
 
 const reader = new nsq.Reader('sample_topic', 'test_channel', {
-  lookupdHTTPAddresses: `172.19.0.1:4161`
+  lookupdHTTPAddresses: '172.19.0.1:4161'
 });
 
 reader.connect();
